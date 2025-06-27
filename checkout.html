@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Tako</title>
+  <link rel="preload" href="fonts/eUkraineLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/eUkraineRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/eUkraineMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/eUkraineBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/eUkraineHeadLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/eUkraineHeadRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <button class="btn-reset burger" aria-label="Open menu" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+      <a href="#!" class="header__logo">
+        <img class="header__logo-big" loading="lazy" src="img/logo.svg" width="160" height="36" alt="">
+        <img class="header__logo-sm" loading="lazy" src="img/logo-mobile.svg" width="46" height="40" alt="">
+      </a>
+      <nav class="header__nav menu" data-menu>
+        <ul class="menu__list list-reset">
+          <li class="menu__item">
+            <button class="menu__btn btn btn-blue btn-reset" data-js-dropdown-button>Вироби</button>
+            <div class="dropdown" data-js-dropdown-menu>
+              <ul class="dropdown__list list-reset">
+                <li class="dropdown__item">
+                  <div class="dropdown__img">
+                    <img loading="lazy" src="../img/dropdown-img-1.png" width="362" height="172" alt="">
+                  </div>
+                  <a href="#!" class="dropdown__link">
+                    <span>Для зброї</span>
+                    <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 21L21.5 7M7.5 7.00105H21.5V20.999" stroke="#1C2F43" stroke-width="2.5" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <div class="dropdown__img">
+                    <img loading="lazy" src="../img/dropdown-img-2.png" width="362" height="172" alt="">
+                  </div>
+                  <a href="#!" class="dropdown__link">
+                    <span>Медицина</span>
+                    <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 21L21.5 7M7.5 7.00105H21.5V20.999" stroke="#1C2F43" stroke-width="2.5" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <div class="dropdown__img">
+                    <img loading="lazy" src="../img/dropdown-img-3.png" width="362" height="172" alt="">
+                  </div>
+                  <a href="#!" class="dropdown__link">
+                    <span>Для рацій</span>
+                    <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 21L21.5 7M7.5 7.00105H21.5V20.999" stroke="#1C2F43" stroke-width="2.5" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <div class="dropdown__img">
+                    <img loading="lazy" src="../img/dropdown-img-4.png" width="362" height="172" alt="">
+                  </div>
+                  <a href="#!" class="dropdown__link">
+                    <span>РЕБ / РЕР</span>
+                    <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 21L21.5 7M7.5 7.00105H21.5V20.999" stroke="#1C2F43" stroke-width="2.5" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="dropdown__item">
+                  <div class="dropdown__img">
+                    <img loading="lazy" src="../img/dropdown-img-5.png" width="362" height="172" alt="">
+                  </div>
+                  <a href="#!" class="dropdown__link">
+                    <span>Для дронів</span>
+                    <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.5 21L21.5 7M7.5 7.00105H21.5V20.999" stroke="#1C2F43" stroke-width="2.5" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link">Про нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link">Як ми працюємо</a>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link">Партнери</a>
+          </li>
+          <li class="menu__item">
+            <a href="#!" class="menu__link">Відгуки</a>
+          </li>
+        </ul>
+        <div class="menu__mobile-contacts">
+          <ul>
+            <li><a href="#!">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 6.25C9.75832 6.25 9.0333 6.46993 8.41661 6.88199C7.79993 7.29404 7.31928 7.87971 7.03545 8.56494C6.75162 9.25016 6.67736 10.0042 6.82206 10.7316C6.96675 11.459 7.3239 12.1272 7.84835 12.6517C8.3728 13.1761 9.04098 13.5333 9.76841 13.6779C10.4958 13.8226 11.2498 13.7484 11.9351 13.4645C12.6203 13.1807 13.206 12.7001 13.618 12.0834C14.0301 11.4667 14.25 10.7417 14.25 10C14.249 9.00576 13.8535 8.05253 13.1505 7.34949C12.4475 6.64645 11.4942 6.25103 10.5 6.25ZM10.5 12.5C10.0055 12.5 9.5222 12.3534 9.11107 12.0787C8.69995 11.804 8.37952 11.4135 8.1903 10.9567C8.00108 10.4999 7.95157 9.99723 8.04804 9.51227C8.1445 9.02732 8.3826 8.58186 8.73223 8.23223C9.08186 7.8826 9.52732 7.6445 10.0123 7.54804C10.4972 7.45157 10.9999 7.50108 11.4567 7.6903C11.9135 7.87952 12.304 8.19995 12.5787 8.61107C12.8534 9.0222 13 9.50555 13 10C13 10.663 12.7366 11.2989 12.2678 11.7678C11.7989 12.2366 11.163 12.5 10.5 12.5ZM14.25 1.875H6.75C5.59006 1.87624 4.47798 2.33758 3.65778 3.15778C2.83758 3.97798 2.37624 5.09006 2.375 6.25V13.75C2.37624 14.9099 2.83758 16.022 3.65778 16.8422C4.47798 17.6624 5.59006 18.1238 6.75 18.125H14.25C15.4099 18.1238 16.522 17.6624 17.3422 16.8422C18.1624 16.022 18.6238 14.9099 18.625 13.75V6.25C18.6238 5.09006 18.1624 3.97798 17.3422 3.15778C16.522 2.33758 15.4099 1.87624 14.25 1.875ZM17.375 13.75C17.375 14.5788 17.0458 15.3737 16.4597 15.9597C15.8737 16.5458 15.0788 16.875 14.25 16.875H6.75C5.9212 16.875 5.12634 16.5458 4.54029 15.9597C3.95424 15.3737 3.625 14.5788 3.625 13.75V6.25C3.625 5.4212 3.95424 4.62634 4.54029 4.04029C5.12634 3.45424 5.9212 3.125 6.75 3.125H14.25C15.0788 3.125 15.8737 3.45424 16.4597 4.04029C17.0458 4.62634 17.375 5.4212 17.375 6.25V13.75ZM15.5 5.9375C15.5 6.12292 15.445 6.30418 15.342 6.45835C15.239 6.61252 15.0926 6.73268 14.9213 6.80364C14.75 6.87459 14.5615 6.89316 14.3796 6.85699C14.1977 6.82081 14.0307 6.73152 13.8996 6.60041C13.7685 6.4693 13.6792 6.30225 13.643 6.1204C13.6068 5.93854 13.6254 5.75004 13.6964 5.57873C13.7673 5.40743 13.8875 5.26101 14.0417 5.158C14.1958 5.05498 14.3771 5 14.5625 5C14.8111 5 15.0496 5.09877 15.2254 5.27459C15.4012 5.4504 15.5 5.68886 15.5 5.9375Z" fill="#0F5EBB"/>
+              </svg>
+            </a></li>
+            <li><a href="!#">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.5 1.875C8.89303 1.875 7.32214 2.35152 5.986 3.24431C4.64985 4.1371 3.60844 5.40605 2.99348 6.8907C2.37852 8.37535 2.21762 10.009 2.53112 11.5851C2.84463 13.1612 3.61846 14.6089 4.75476 15.7452C5.89106 16.8815 7.3388 17.6554 8.91489 17.9689C10.491 18.2824 12.1247 18.1215 13.6093 17.5065C15.094 16.8916 16.3629 15.8502 17.2557 14.514C18.1485 13.1779 18.625 11.607 18.625 10C18.6227 7.84581 17.766 5.78051 16.2427 4.25727C14.7195 2.73403 12.6542 1.87727 10.5 1.875ZM11.125 16.8461V11.875H13C13.1658 11.875 13.3247 11.8092 13.4419 11.6919C13.5592 11.5747 13.625 11.4158 13.625 11.25C13.625 11.0842 13.5592 10.9253 13.4419 10.8081C13.3247 10.6908 13.1658 10.625 13 10.625H11.125V8.75C11.125 8.41848 11.2567 8.10054 11.4911 7.86612C11.7255 7.6317 12.0435 7.5 12.375 7.5H13.625C13.7908 7.5 13.9497 7.43415 14.0669 7.31694C14.1842 7.19973 14.25 7.04076 14.25 6.875C14.25 6.70924 14.1842 6.55027 14.0669 6.43306C13.9497 6.31585 13.7908 6.25 13.625 6.25H12.375C11.712 6.25 11.0761 6.51339 10.6072 6.98223C10.1384 7.45107 9.875 8.08696 9.875 8.75V10.625H8C7.83424 10.625 7.67527 10.6908 7.55806 10.8081C7.44085 10.9253 7.375 11.0842 7.375 11.25C7.375 11.4158 7.44085 11.5747 7.55806 11.6919C7.67527 11.8092 7.83424 11.875 8 11.875H9.875V16.8461C8.11312 16.6853 6.48107 15.8514 5.31831 14.5179C4.15556 13.1845 3.55162 11.4541 3.63212 9.68674C3.71263 7.91936 4.47137 6.25106 5.75053 5.02883C7.02969 3.80661 8.7308 3.12456 10.5 3.12456C12.2692 3.12456 13.9703 3.80661 15.2495 5.02883C16.5286 6.25106 17.2874 7.91936 17.3679 9.68674C17.4484 11.4541 16.8444 13.1845 15.6817 14.5179C14.5189 15.8514 12.8869 16.6853 11.125 16.8461Z" fill="#0F5EBB"/>
+              </svg>
+            </a></li>
+            <li><a href="!#">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 5.625C17.0058 5.62397 16.0525 5.22855 15.3495 4.52551C14.6465 3.82247 14.251 2.86924 14.25 1.875C14.25 1.70924 14.1842 1.55027 14.0669 1.43306C13.9497 1.31585 13.7908 1.25 13.625 1.25H10.5C10.3342 1.25 10.1753 1.31585 10.0581 1.43306C9.94085 1.55027 9.875 1.70924 9.875 1.875V12.1875C9.87487 12.4671 9.79972 12.7415 9.65739 12.9822C9.51506 13.2229 9.31076 13.4209 9.0658 13.5557C8.82084 13.6905 8.5442 13.7571 8.26474 13.7486C7.98527 13.74 7.71322 13.6566 7.47695 13.5071C7.24069 13.3576 7.04888 13.1474 6.92152 12.8985C6.79416 12.6496 6.73592 12.3711 6.75288 12.092C6.76983 11.8129 6.86137 11.5435 7.01793 11.3119C7.17449 11.0802 7.39034 10.8948 7.64297 10.775C7.74983 10.7243 7.84011 10.6443 7.90331 10.5443C7.96651 10.4443 8.00004 10.3284 8 10.2102V6.875C8.00004 6.78364 7.98005 6.69338 7.94144 6.61058C7.90283 6.52778 7.84653 6.45446 7.77652 6.39576C7.7065 6.33707 7.62447 6.29444 7.53621 6.27088C7.44794 6.24731 7.35558 6.24339 7.26562 6.25938C4.47734 6.75625 2.375 9.30469 2.375 12.1875C2.375 13.7622 3.00056 15.2724 4.11405 16.3859C5.22755 17.4994 6.73778 18.125 8.3125 18.125C9.88722 18.125 11.3974 17.4994 12.5109 16.3859C13.6244 15.2724 14.25 13.7622 14.25 12.1875V9.08516C15.4075 9.6891 16.6944 10.003 18 10C18.1658 10 18.3247 9.93415 18.4419 9.81694C18.5592 9.69973 18.625 9.54076 18.625 9.375V6.25C18.625 6.08424 18.5592 5.92527 18.4419 5.80806C18.3247 5.69085 18.1658 5.625 18 5.625ZM17.375 8.72187C16.1536 8.61365 14.9841 8.17774 13.9898 7.46016C13.8964 7.39297 13.7862 7.35289 13.6714 7.34434C13.5566 7.33579 13.4417 7.3591 13.3394 7.4117C13.237 7.4643 13.1511 7.54415 13.0912 7.64244C13.0314 7.74074 12.9998 7.85365 13 7.96875V12.1875C13 13.4307 12.5061 14.623 11.6271 15.5021C10.748 16.3811 9.5557 16.875 8.3125 16.875C7.0693 16.875 5.87701 16.3811 4.99794 15.5021C4.11886 14.623 3.625 13.4307 3.625 12.1875C3.625 10.1641 4.925 8.34922 6.75 7.6875V9.84922C6.34598 10.1192 6.01878 10.4892 5.80031 10.9232C5.58184 11.3572 5.47954 11.8405 5.50339 12.3258C5.52724 12.8111 5.67641 13.282 5.93638 13.6925C6.19635 14.103 6.55825 14.4392 6.98679 14.6682C7.41533 14.8972 7.8959 15.0114 8.38166 14.9994C8.86742 14.9875 9.3418 14.8499 9.75857 14.6C10.1753 14.3502 10.5203 13.9966 10.7597 13.5738C10.9992 13.151 11.125 12.6734 11.125 12.1875V2.5H13.0391C13.1796 3.60085 13.6816 4.62389 14.4664 5.40862C15.2511 6.19335 16.2742 6.69538 17.375 6.83594V8.72187Z" fill="#0F5EBB"/>
+              </svg>
+            </a></li>
+            <li><a href="#!">
+              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.3469 9.47969L9.59688 6.97969C9.50273 6.91688 9.39329 6.88081 9.28024 6.87533C9.1672 6.86985 9.05479 6.89517 8.95501 6.94859C8.85523 7.00201 8.77183 7.08152 8.71371 7.17864C8.65559 7.27575 8.62493 7.38682 8.625 7.5V12.5C8.62493 12.6132 8.65559 12.7243 8.71371 12.8214C8.77183 12.9185 8.85523 12.998 8.95501 13.0514C9.05479 13.1048 9.1672 13.1302 9.28024 13.1247C9.39329 13.1192 9.50273 13.0831 9.59688 13.0203L13.3469 10.5203C13.4326 10.4633 13.5029 10.3859 13.5515 10.2951C13.6002 10.2044 13.6256 10.103 13.6256 10C13.6256 9.89702 13.6002 9.79564 13.5515 9.70487C13.5029 9.61409 13.4326 9.53674 13.3469 9.47969ZM9.875 11.332V8.67188L11.8734 10L9.875 11.332ZM18.807 5.43125C18.7334 5.14324 18.5924 4.87686 18.3956 4.65409C18.1987 4.43132 17.9517 4.25854 17.675 4.15C14.9969 3.11563 10.7344 3.125 10.5 3.125C10.2656 3.125 6.00312 3.11563 3.325 4.15C3.04825 4.25854 2.80128 4.43132 2.60445 4.65409C2.40762 4.87686 2.26658 5.14324 2.19297 5.43125C1.99063 6.21094 1.75 7.63594 1.75 10C1.75 12.3641 1.99063 13.7891 2.19297 14.5688C2.26647 14.8569 2.40746 15.1234 2.6043 15.3464C2.80113 15.5693 3.04816 15.7422 3.325 15.8508C5.89062 16.8406 9.90625 16.875 10.4484 16.875H10.5516C11.0938 16.875 15.1117 16.8406 17.675 15.8508C17.9518 15.7422 18.1989 15.5693 18.3957 15.3464C18.5925 15.1234 18.7335 14.8569 18.807 14.5688C19.0094 13.7875 19.25 12.3641 19.25 10C19.25 7.63594 19.0094 6.21094 18.807 5.43125ZM17.5969 14.2594C17.5731 14.3552 17.5269 14.4441 17.4621 14.5186C17.3973 14.5932 17.3158 14.6513 17.2242 14.6883C14.7516 15.643 10.5461 15.6258 10.5055 15.6258H10.5C10.4578 15.6258 6.25547 15.6414 3.78125 14.6883C3.68966 14.6513 3.60814 14.5932 3.54337 14.5186C3.47859 14.4441 3.4324 14.3552 3.40859 14.2594C3.21875 13.5461 3 12.232 3 10C3 7.76797 3.21875 6.45391 3.40312 5.74453C3.42649 5.64811 3.47248 5.55864 3.53728 5.48351C3.60208 5.40839 3.68383 5.34977 3.77578 5.3125C6.16016 4.39141 10.1555 4.375 10.4828 4.375H10.5039C10.5461 4.375 14.7523 4.36094 17.2227 5.3125C17.3142 5.34947 17.3958 5.40761 17.4605 5.48216C17.5253 5.55671 17.5715 5.64556 17.5953 5.74141C17.7813 6.45391 18 7.76797 18 10C18 12.232 17.7812 13.5461 17.5969 14.2555V14.2594Z" fill="#0F5EBB"/>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__action">
+        <a href="#!" class="header__contact btn-outline btn-outline-blue">Зв’язатися</a>
+        <a href="#!" class="header__support btn-outline btn-outline-blue">Підтримати</a>
+        <a href="#!" class="header__checkout btn btn-navy">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.125 3.17031V2.5C13.125 2.00272 12.9275 1.52581 12.5758 1.17417C12.2242 0.822544 11.7473 0.625 11.25 0.625H8.75C8.25272 0.625 7.77581 0.822544 7.42417 1.17417C7.07254 1.52581 6.875 2.00272 6.875 2.5V3.17031C5.83444 3.32198 4.88311 3.84278 4.19467 4.63765C3.50622 5.43251 3.12657 6.44844 3.125 7.5V16.875C3.125 17.2065 3.2567 17.5245 3.49112 17.7589C3.72554 17.9933 4.04348 18.125 4.375 18.125H15.625C15.9565 18.125 16.2745 17.9933 16.5089 17.7589C16.7433 17.5245 16.875 17.2065 16.875 16.875V7.5C16.8734 6.44844 16.4938 5.43251 15.8053 4.63765C15.1169 3.84278 14.1656 3.32198 13.125 3.17031ZM8.75 1.875H11.25C11.4158 1.875 11.5747 1.94085 11.6919 2.05806C11.8092 2.17527 11.875 2.33424 11.875 2.5V3.125H8.125V2.5C8.125 2.33424 8.19085 2.17527 8.30806 2.05806C8.42527 1.94085 8.58424 1.875 8.75 1.875ZM13.125 12.5H6.875V11.875C6.875 11.7092 6.94085 11.5503 7.05806 11.4331C7.17527 11.3158 7.33424 11.25 7.5 11.25H12.5C12.6658 11.25 12.8247 11.3158 12.9419 11.4331C13.0592 11.5503 13.125 11.7092 13.125 11.875V12.5ZM6.875 13.75H10.625V14.375C10.625 14.5408 10.6908 14.6997 10.8081 14.8169C10.9253 14.9342 11.0842 15 11.25 15C11.4158 15 11.5747 14.9342 11.6919 14.8169C11.8092 14.6997 11.875 14.5408 11.875 14.375V13.75H13.125V16.875H6.875V13.75ZM15.625 16.875H14.375V11.875C14.375 11.3777 14.1775 10.9008 13.8258 10.5492C13.4742 10.1975 12.9973 10 12.5 10H7.5C7.00272 10 6.52581 10.1975 6.17417 10.5492C5.82254 10.9008 5.625 11.3777 5.625 11.875V16.875H4.375V7.5C4.375 6.6712 4.70424 5.87634 5.29029 5.29029C5.87634 4.70424 6.6712 4.375 7.5 4.375H12.5C13.3288 4.375 14.1237 4.70424 14.7097 5.29029C15.2958 5.87634 15.625 6.6712 15.625 7.5V16.875ZM11.875 6.875C11.875 7.04076 11.8092 7.19973 11.6919 7.31694C11.5747 7.43415 11.4158 7.5 11.25 7.5H8.75C8.58424 7.5 8.42527 7.43415 8.30806 7.31694C8.19085 7.19973 8.125 7.04076 8.125 6.875C8.125 6.70924 8.19085 6.55027 8.30806 6.43306C8.42527 6.31585 8.58424 6.25 8.75 6.25H11.25C11.4158 6.25 11.5747 6.31585 11.6919 6.43306C11.8092 6.55027 11.875 6.70924 11.875 6.875Z" fill="white"/>
+          </svg>
+          <span class="header__checkout-text">Передзамовлення</span>
+          <span class="header__checkout-count">9<span>+</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="checkout">
+        <h1 class="checkout__title title">Оформити замовлення</h1>
+        <form action="#" class="checkout__form">
+          <div class="checkout__column">
+            <div class="checkout__row checkout__customer-contacts">
+              <h2 class="checkout__name">Контакти замовника</h2>
+              <div class="checkout__field">
+                <div class="checkout__field-col">
+                  <label for="lastName">Прізвище</label>
+                  <input type="text" name="lastName" id="lastName" placeholder="Введіть прізвище" required>
+                </div>
+                <div class="checkout__field-col">
+                  <label for="firstName">Ім’я</label>
+                  <input type="text" name="firstName" id="firstName" placeholder="Введіть ім’я" required>
+                </div>
+              </div>
+              <div class="checkout__field">
+                <div class="checkout__field-col">
+                  <label for="middleName">По батькові</label>
+                  <input type="text" name="middleName" id="middleName" placeholder="Введіть">
+                </div>
+                <div class="checkout__field-col">
+                  <label for="phone">Номер телефону</label>
+                  <input type="tel" name="phone" id="phone" placeholder="+380" required>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__row checkout__delivery">
+              <h2 class="checkout__name">Доставка</h2>
+              <div class="checkout__field">
+                <div class="checkout__field-col">
+                  <label for="deliveryCity">Місто / Населений пукт</label>
+                  <select name="deliveryCity" id="deliveryCity">
+                    <option value="" hidden selected>Введіть</option>
+                    <option value="kiev">Київ</option>
+                    <option value="odessa">Одеса</option>
+                    <option value="vinnitsa">Вінниця</option>
+                    <option value="poltava">Полтава</option>
+                    <option value="lviv">Львів</option>
+                  </select>
+                </div>
+                <div class="checkout__field-col">
+                  <label for="deliveryBranch">Номер відділення</label>
+                  <select class="js-choices" name="deliveryBranch" id="deliveryBranch">
+                    <option value="" hidden selected>Оберіть номер відділення НП</option>
+                    <option value="1">Відділення №1</option>
+                    <option value="2">Відділення №2</option>
+                    <option value="3">Відділення №3</option>
+                    <option value="4">Відділення №4</option>
+                    <option value="5">Відділення №5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="checkout__row checkout__communication">
+              <h2 class="checkout__name">Зручний метод зв’язку</h2>
+              <div class="checkout__tabs tab">
+                <label class="radio-label tab__links" data-tab="tab-1">
+                  <input type="radio" name="communication" class="radio-field" value="tab-1" checked>
+                  <span class="radio-content">Номер телефону</span>
+                </label>
+                <label class="radio-label tab__links" data-tab="tab-2">
+                  <input type="radio" name="communication" class="radio-field" value="tab-2">
+                  <span class="radio-content">Viber</span>
+                </label>
+                <label class="radio-label tab__links" data-tab="tab-3">
+                  <input type="radio" name="communication" class="radio-field" value="tab-3">
+                  <span class="radio-content">Telegram</span>
+                </label>
+                <label class="radio-label tab__links" data-tab="tab-4">
+                  <input type="radio" name="communication" class="radio-field" value="tab-4">
+                  <span class="radio-content">Whatsup</span>
+                </label>
+                <label class="radio-label tab__links" data-tab="tab-5">
+                  <input type="radio" name="communication" class="radio-field" value="tab-5">
+                  <span class="radio-content">Signal</span>
+                </label>
+              </div>
+              <div class="tab__contents">
+                <div id="tab-1" class="tab__content">
+                  <label for="tel">Номер телефону</label>
+                  <input type="tel" name="tel" id="tel" placeholder="Номер телефону">
+                </div>
+
+                <div id="tab-2" class="tab__content">
+                  <label for="viber">Viber</label>
+                  <input type="text" name="viber" id="viber" placeholder="Viber">
+                </div>
+
+                <div id="tab-3" class="tab__content">
+                  <label for="telegram">Telegram</label>
+                  <input type="text" name="telegram" id="telegram" placeholder="Telegram">
+                </div>
+
+                <div id="tab-4" class="tab__content">
+                  <label for="whatsup">Whatsup</label>
+                  <input type="text" name="whatsup" id="whatsup" placeholder="Whatsup">
+                </div>
+
+                <div id="tab-5" class="tab__content">
+                  <label for="signal">Signal</label>
+                  <input type="text" name="signal" id="signal" placeholder="Signal">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="checkout__column">
+            <div class="checkout__row checkout__pre-order preorder">
+              <h2 class="checkout__name">Передзамовлення</h2>
+              <ul class="preorder__list">
+                <li class="preorder__item">
+                  <button class="preorder__trash btn-reset" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.25 4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM18 19.5H6V6H18V19.5ZM7.5 2.25C7.5 2.05109 7.57902 1.86032 7.71967 1.71967C7.86032 1.57902 8.05109 1.5 8.25 1.5H15.75C15.9489 1.5 16.1397 1.57902 16.2803 1.71967C16.421 1.86032 16.5 2.05109 16.5 2.25C16.5 2.44891 16.421 2.63968 16.2803 2.78033C16.1397 2.92098 15.9489 3 15.75 3H8.25C8.05109 3 7.86032 2.92098 7.71967 2.78033C7.57902 2.63968 7.5 2.44891 7.5 2.25Z" fill="#6B6B6B"/>
+                    </svg>
+                  </button>
+                  <div class="preorder__image">
+                    <img loading="lazy" src="img/pre-order-img.png" width="124" height="124" alt="">
+                  </div>
+                  <div class="preorder__link">Пристрій швидкого спорядження набоїв</div>
+                  <div class="preorder__stepper stepper">
+                    <button class="stepper__btn btn-reset stepper__btn-down stepper__btn--disabled"><img loading="lazy" src="img/minus.svg" width="24" height="24" alt=""></button>
+                    <div class="stepper__field">
+                      <input type="text" value="1" maxlength="2" class="stepper__input">
+                    </div>
+                    <button class="stepper__btn btn-reset stepper__btn-up"><img loading="lazy" src="img/plus.svg" width="24" height="24" alt=""></button>
+                  </div>
+                  <div class="preorder__price">
+                    <span>10,00<span>грн</span></span>
+                    <p>собівартість за од.</p>
+                  </div>
+                </li>
+                <li class="preorder__item">
+                  <button class="preorder__trash btn-reset" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.25 4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM18 19.5H6V6H18V19.5ZM7.5 2.25C7.5 2.05109 7.57902 1.86032 7.71967 1.71967C7.86032 1.57902 8.05109 1.5 8.25 1.5H15.75C15.9489 1.5 16.1397 1.57902 16.2803 1.71967C16.421 1.86032 16.5 2.05109 16.5 2.25C16.5 2.44891 16.421 2.63968 16.2803 2.78033C16.1397 2.92098 15.9489 3 15.75 3H8.25C8.05109 3 7.86032 2.92098 7.71967 2.78033C7.57902 2.63968 7.5 2.44891 7.5 2.25Z" fill="#6B6B6B"/>
+                    </svg>
+                  </button>
+                  <div class="preorder__image">
+                    <img loading="lazy" src="img/pre-order-img.png" width="124" height="124" alt="">
+                  </div>
+                  <div class="preorder__link">Пристрій швидкого спорядження набоїв</div>
+                  <div class="preorder__stepper stepper">
+                    <button class="stepper__btn btn-reset stepper__btn-down stepper__btn--disabled"><img loading="lazy" src="img/minus.svg" width="24" height="24" alt=""></button>
+                    <div class="stepper__field">
+                      <input type="text" value="1" maxlength="2" class="stepper__input">
+                    </div>
+                    <button class="stepper__btn btn-reset stepper__btn-up"><img loading="lazy" src="img/plus.svg" width="24" height="24" alt=""></button>
+                  </div>
+                  <div class="preorder__price">
+                    <span>10,00<span>грн</span></span>
+                    <p>собівартість за од.</p>
+                  </div>
+                </li>
+                <li class="preorder__item">
+                  <button class="preorder__trash btn-reset" type="button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.25 4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM18 19.5H6V6H18V19.5ZM7.5 2.25C7.5 2.05109 7.57902 1.86032 7.71967 1.71967C7.86032 1.57902 8.05109 1.5 8.25 1.5H15.75C15.9489 1.5 16.1397 1.57902 16.2803 1.71967C16.421 1.86032 16.5 2.05109 16.5 2.25C16.5 2.44891 16.421 2.63968 16.2803 2.78033C16.1397 2.92098 15.9489 3 15.75 3H8.25C8.05109 3 7.86032 2.92098 7.71967 2.78033C7.57902 2.63968 7.5 2.44891 7.5 2.25Z" fill="#6B6B6B"/>
+                    </svg>
+                  </button>
+                  <div class="preorder__image">
+                    <img loading="lazy" src="img/pre-order-img.png" width="124" height="124" alt="">
+                  </div>
+                  <div class="preorder__link">Пристрій швидкого спорядження набоїв</div>
+                  <div class="preorder__stepper stepper">
+                    <button class="stepper__btn btn-reset stepper__btn-down stepper__btn--disabled"><img loading="lazy" src="img/minus.svg" width="24" height="24" alt=""></button>
+                    <div class="stepper__field">
+                      <input type="text" value="1" maxlength="2" class="stepper__input">
+                    </div>
+                    <button class="stepper__btn btn-reset stepper__btn-up"><img loading="lazy" src="img/plus.svg" width="24" height="24" alt=""></button>
+                  </div>
+                  <div class="preorder__price">
+                    <span>10,00<span>грн</span></span>
+                    <p>собівартість за од.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="checkout__row checkout__total">
+              <p class="checkout__cost">собівартість виробів:</p>
+              <span class="checkout__sum">140,00<span>грн</span></span>
+              <div class="checkout__military">
+                <p>Для військових — <span>безкоштовно</span></p>
+              </div>
+            </div>
+            <div class="checkout__row checkout__buttons">
+              <button class="checkout__btn btn-reset btn btn-blue" type="submit">Підтвердити</button>
+              <button class="checkout__btn btn-reset btn-outline btn-outline-blue" type="submit">Підтвердити та підтримати</button>
+              <div class="checkout__info">
+                <p>Залиште заявку — ми зв’яжемось із вами для уточнення деталей і підтвердження замовлення. Жодної передоплати до підтвердження. Все просто і чесно.</p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer footer__checkout">
+      <div class="footer__inner">
+        <div class="footer__copyright">
+          <p>© 2025 TAKO. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay"></div>
+    <script src="js/main.js"></script>
+
+  </div>
+</body>
+
+</html>
