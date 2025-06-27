@@ -1421,6 +1421,7 @@ a[class] {
     line-height: 1.2;
   }
 }
+
 .work {
   padding: 4px 8px;
   background-color: var(--color-light-gray);
@@ -2652,6 +2653,7 @@ a[class] {
   opacity: 0.2;
   pointer-events: none;
 }
+
 .footer {
   padding: 4px 8px;
   background-color: var(--color-light-gray);
