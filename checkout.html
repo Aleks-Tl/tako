@@ -27,7 +27,7 @@
       <button class="btn-reset burger" aria-label="Open menu" aria-expanded="false" data-burger>
         <span class="burger__line"></span>
       </button>
-      <a href="#!" class="header__logo">
+      <a href="index.html" class="header__logo">
         <img class="header__logo-big" loading="lazy" src="img/logo.svg" width="160" height="36" alt="">
         <img class="header__logo-sm" loading="lazy" src="img/logo-mobile.svg" width="46" height="40" alt="">
       </a>
@@ -134,9 +134,9 @@
         </div>
       </nav>
       <div class="header__action">
-        <a href="#!" class="header__contact btn-outline btn-outline-blue">Зв’язатися</a>
-        <a href="#!" class="header__support btn-outline btn-outline-blue">Підтримати</a>
-        <a href="#!" class="header__checkout btn btn-navy">
+        <a href="#!" class="header__action-btn header__contact btn-outline btn-outline-blue">Зв’язатися</a>
+        <a href="#!" class="header__action-btn header__support btn-outline btn-outline-blue">Підтримати</a>
+        <a href="#!" class="header__action-btn header__checkout btn btn-navy">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.125 3.17031V2.5C13.125 2.00272 12.9275 1.52581 12.5758 1.17417C12.2242 0.822544 11.7473 0.625 11.25 0.625H8.75C8.25272 0.625 7.77581 0.822544 7.42417 1.17417C7.07254 1.52581 6.875 2.00272 6.875 2.5V3.17031C5.83444 3.32198 4.88311 3.84278 4.19467 4.63765C3.50622 5.43251 3.12657 6.44844 3.125 7.5V16.875C3.125 17.2065 3.2567 17.5245 3.49112 17.7589C3.72554 17.9933 4.04348 18.125 4.375 18.125H15.625C15.9565 18.125 16.2745 17.9933 16.5089 17.7589C16.7433 17.5245 16.875 17.2065 16.875 16.875V7.5C16.8734 6.44844 16.4938 5.43251 15.8053 4.63765C15.1169 3.84278 14.1656 3.32198 13.125 3.17031ZM8.75 1.875H11.25C11.4158 1.875 11.5747 1.94085 11.6919 2.05806C11.8092 2.17527 11.875 2.33424 11.875 2.5V3.125H8.125V2.5C8.125 2.33424 8.19085 2.17527 8.30806 2.05806C8.42527 1.94085 8.58424 1.875 8.75 1.875ZM13.125 12.5H6.875V11.875C6.875 11.7092 6.94085 11.5503 7.05806 11.4331C7.17527 11.3158 7.33424 11.25 7.5 11.25H12.5C12.6658 11.25 12.8247 11.3158 12.9419 11.4331C13.0592 11.5503 13.125 11.7092 13.125 11.875V12.5ZM6.875 13.75H10.625V14.375C10.625 14.5408 10.6908 14.6997 10.8081 14.8169C10.9253 14.9342 11.0842 15 11.25 15C11.4158 15 11.5747 14.9342 11.6919 14.8169C11.8092 14.6997 11.875 14.5408 11.875 14.375V13.75H13.125V16.875H6.875V13.75ZM15.625 16.875H14.375V11.875C14.375 11.3777 14.1775 10.9008 13.8258 10.5492C13.4742 10.1975 12.9973 10 12.5 10H7.5C7.00272 10 6.52581 10.1975 6.17417 10.5492C5.82254 10.9008 5.625 11.3777 5.625 11.875V16.875H4.375V7.5C4.375 6.6712 4.70424 5.87634 5.29029 5.29029C5.87634 4.70424 6.6712 4.375 7.5 4.375H12.5C13.3288 4.375 14.1237 4.70424 14.7097 5.29029C15.2958 5.87634 15.625 6.6712 15.625 7.5V16.875ZM11.875 6.875C11.875 7.04076 11.8092 7.19973 11.6919 7.31694C11.5747 7.43415 11.4158 7.5 11.25 7.5H8.75C8.58424 7.5 8.42527 7.43415 8.30806 7.31694C8.19085 7.19973 8.125 7.04076 8.125 6.875C8.125 6.70924 8.19085 6.55027 8.30806 6.43306C8.42527 6.31585 8.58424 6.25 8.75 6.25H11.25C11.4158 6.25 11.5747 6.31585 11.6919 6.43306C11.8092 6.55027 11.875 6.70924 11.875 6.875Z" fill="white"/>
           </svg>
@@ -151,28 +151,32 @@
     <main class="main">
       <section class="checkout">
         <h1 class="checkout__title title">Оформити замовлення</h1>
-        <form action="#" class="checkout__form">
+        <form action="#" class="checkout__form" novalidate data-js-form>
           <div class="checkout__column">
             <div class="checkout__row checkout__customer-contacts">
               <h2 class="checkout__name">Контакти замовника</h2>
               <div class="checkout__field">
                 <div class="checkout__field-col">
                   <label for="lastName">Прізвище</label>
-                  <input type="text" name="lastName" id="lastName" placeholder="Введіть прізвище" required>
+                  <input type="text" name="lastName" id="lastName" placeholder="Введіть прізвище" minlength="3" maxLength="25" required>
+                  <span class="checkout__errors" data-js-form-field-errors></span>
                 </div>
                 <div class="checkout__field-col">
                   <label for="firstName">Ім’я</label>
-                  <input type="text" name="firstName" id="firstName" placeholder="Введіть ім’я" required>
+                  <input type="text" name="firstName" id="firstName" placeholder="Введіть ім’я" minlength="3" maxLength="25" required>
+                  <span class="checkout__errors" data-js-form-field-errors></span>
                 </div>
               </div>
               <div class="checkout__field">
                 <div class="checkout__field-col">
                   <label for="middleName">По батькові</label>
-                  <input type="text" name="middleName" id="middleName" placeholder="Введіть">
+                  <input type="text" name="middleName" id="middleName" placeholder="Введіть" minlength="3" maxLength="25" required>
+                  <span class="checkout__errors" data-js-form-field-errors></span>
                 </div>
                 <div class="checkout__field-col">
                   <label for="phone">Номер телефону</label>
-                  <input type="tel" name="phone" id="phone" placeholder="+380" required>
+                  <input type="tel" name="phone" id="phone" placeholder="+380" pattern="^\+380[3-9][0-9]{8}$" minlength="13" maxlength="13" title="Введіть номер телефону у форматі +380 000 00 00. " required>
+                  <span class="checkout__errors" data-js-form-field-errors></span>
                 </div>
               </div>
             </div>
@@ -194,11 +198,11 @@
                   <label for="deliveryBranch">Номер відділення</label>
                   <select class="js-choices" name="deliveryBranch" id="deliveryBranch">
                     <option value="" hidden selected>Оберіть номер відділення НП</option>
-                    <option value="1">Відділення №1</option>
-                    <option value="2">Відділення №2</option>
-                    <option value="3">Відділення №3</option>
-                    <option value="4">Відділення №4</option>
-                    <option value="5">Відділення №5</option>
+                    <option value="branch 1">Відділення №1</option>
+                    <option value="branch 2">Відділення №2</option>
+                    <option value="branch 3">Відділення №3</option>
+                    <option value="branch 4">Відділення №4</option>
+                    <option value="branch 5">Відділення №5</option>
                   </select>
                 </div>
               </div>
@@ -207,50 +211,50 @@
               <h2 class="checkout__name">Зручний метод зв’язку</h2>
               <div class="checkout__tabs tab">
                 <label class="radio-label tab__links" data-tab="tab-1">
-                  <input type="radio" name="communication" class="radio-field" value="tab-1" checked>
+                  <input type="radio" name="communication" class="radio-field" value="Phone">
                   <span class="radio-content">Номер телефону</span>
                 </label>
                 <label class="radio-label tab__links" data-tab="tab-2">
-                  <input type="radio" name="communication" class="radio-field" value="tab-2">
+                  <input type="radio" name="communication" class="radio-field" value="Viber">
                   <span class="radio-content">Viber</span>
                 </label>
                 <label class="radio-label tab__links" data-tab="tab-3">
-                  <input type="radio" name="communication" class="radio-field" value="tab-3">
+                  <input type="radio" name="communication" class="radio-field" value="Telegram">
                   <span class="radio-content">Telegram</span>
                 </label>
                 <label class="radio-label tab__links" data-tab="tab-4">
-                  <input type="radio" name="communication" class="radio-field" value="tab-4">
+                  <input type="radio" name="communication" class="radio-field" value="Whatsup">
                   <span class="radio-content">Whatsup</span>
                 </label>
                 <label class="radio-label tab__links" data-tab="tab-5">
-                  <input type="radio" name="communication" class="radio-field" value="tab-5">
+                  <input type="radio" name="communication" class="radio-field" value="Signal">
                   <span class="radio-content">Signal</span>
                 </label>
               </div>
               <div class="tab__contents">
-                <div id="tab-1" class="tab__content">
+                <div id="tab-1" class="tab__content checkout__field-col">
                   <label for="tel">Номер телефону</label>
-                  <input type="tel" name="tel" id="tel" placeholder="Номер телефону">
+                  <input type="tel" name="tel" id="tel" placeholder="Номер телефону" maxlength="13">
                 </div>
 
-                <div id="tab-2" class="tab__content">
+                <div id="tab-2" class="tab__content checkout__field-col">
                   <label for="viber">Viber</label>
-                  <input type="text" name="viber" id="viber" placeholder="Viber">
+                  <input type="text" name="viber" id="viber" placeholder="Viber" maxlength="13">
                 </div>
 
-                <div id="tab-3" class="tab__content">
+                <div id="tab-3" class="tab__content checkout__field-col">
                   <label for="telegram">Telegram</label>
-                  <input type="text" name="telegram" id="telegram" placeholder="Telegram">
+                  <input type="text" name="telegram" id="telegram" placeholder="Telegram" maxlength="13">
                 </div>
 
-                <div id="tab-4" class="tab__content">
+                <div id="tab-4" class="tab__content checkout__field-col">
                   <label for="whatsup">Whatsup</label>
-                  <input type="text" name="whatsup" id="whatsup" placeholder="Whatsup">
+                  <input type="text" name="whatsup" id="whatsup" placeholder="Whatsup" maxlength="13">
                 </div>
 
-                <div id="tab-5" class="tab__content">
+                <div id="tab-5" class="tab__content checkout__field-col">
                   <label for="signal">Signal</label>
-                  <input type="text" name="signal" id="signal" placeholder="Signal">
+                  <input type="text" name="signal" id="signal" placeholder="Signal" maxlength="13">
                 </div>
               </div>
             </div>
@@ -260,7 +264,7 @@
               <h2 class="checkout__name">Передзамовлення</h2>
               <ul class="preorder__list">
                 <li class="preorder__item">
-                  <button class="preorder__trash btn-reset" type="button">
+                  <button class="preorder__trash btn-reset" type="button" title="Видалити">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M20.25 4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM18 19.5H6V6H18V19.5ZM7.5 2.25C7.5 2.05109 7.57902 1.86032 7.71967 1.71967C7.86032 1.57902 8.05109 1.5 8.25 1.5H15.75C15.9489 1.5 16.1397 1.57902 16.2803 1.71967C16.421 1.86032 16.5 2.05109 16.5 2.25C16.5 2.44891 16.421 2.63968 16.2803 2.78033C16.1397 2.92098 15.9489 3 15.75 3H8.25C8.05109 3 7.86032 2.92098 7.71967 2.78033C7.57902 2.63968 7.5 2.44891 7.5 2.25Z" fill="#6B6B6B"/>
                     </svg>
@@ -272,7 +276,7 @@
                   <div class="preorder__stepper stepper">
                     <button class="stepper__btn btn-reset stepper__btn-down stepper__btn--disabled"><img loading="lazy" src="img/minus.svg" width="24" height="24" alt=""></button>
                     <div class="stepper__field">
-                      <input type="text" value="1" maxlength="2" class="stepper__input">
+                      <input type="text" name="item-1" value="1" maxlength="2" class="stepper__input">
                     </div>
                     <button class="stepper__btn btn-reset stepper__btn-up"><img loading="lazy" src="img/plus.svg" width="24" height="24" alt=""></button>
                   </div>
@@ -282,7 +286,7 @@
                   </div>
                 </li>
                 <li class="preorder__item">
-                  <button class="preorder__trash btn-reset" type="button">
+                  <button class="preorder__trash btn-reset" type="button" title="Видалити">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M20.25 4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM18 19.5H6V6H18V19.5ZM7.5 2.25C7.5 2.05109 7.57902 1.86032 7.71967 1.71967C7.86032 1.57902 8.05109 1.5 8.25 1.5H15.75C15.9489 1.5 16.1397 1.57902 16.2803 1.71967C16.421 1.86032 16.5 2.05109 16.5 2.25C16.5 2.44891 16.421 2.63968 16.2803 2.78033C16.1397 2.92098 15.9489 3 15.75 3H8.25C8.05109 3 7.86032 2.92098 7.71967 2.78033C7.57902 2.63968 7.5 2.44891 7.5 2.25Z" fill="#6B6B6B"/>
                     </svg>
@@ -294,7 +298,7 @@
                   <div class="preorder__stepper stepper">
                     <button class="stepper__btn btn-reset stepper__btn-down stepper__btn--disabled"><img loading="lazy" src="img/minus.svg" width="24" height="24" alt=""></button>
                     <div class="stepper__field">
-                      <input type="text" value="1" maxlength="2" class="stepper__input">
+                      <input type="text" name="item-2" value="1" maxlength="2" class="stepper__input">
                     </div>
                     <button class="stepper__btn btn-reset stepper__btn-up"><img loading="lazy" src="img/plus.svg" width="24" height="24" alt=""></button>
                   </div>
@@ -304,7 +308,7 @@
                   </div>
                 </li>
                 <li class="preorder__item">
-                  <button class="preorder__trash btn-reset" type="button">
+                  <button class="preorder__trash btn-reset" type="button" title="Видалити">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M20.25 4.5H3.75C3.55109 4.5 3.36032 4.57902 3.21967 4.71967C3.07902 4.86032 3 5.05109 3 5.25C3 5.44891 3.07902 5.63968 3.21967 5.78033C3.36032 5.92098 3.55109 6 3.75 6H4.5V19.5C4.5 19.8978 4.65804 20.2794 4.93934 20.5607C5.22064 20.842 5.60218 21 6 21H18C18.3978 21 18.7794 20.842 19.0607 20.5607C19.342 20.2794 19.5 19.8978 19.5 19.5V6H20.25C20.4489 6 20.6397 5.92098 20.7803 5.78033C20.921 5.63968 21 5.44891 21 5.25C21 5.05109 20.921 4.86032 20.7803 4.71967C20.6397 4.57902 20.4489 4.5 20.25 4.5ZM18 19.5H6V6H18V19.5ZM7.5 2.25C7.5 2.05109 7.57902 1.86032 7.71967 1.71967C7.86032 1.57902 8.05109 1.5 8.25 1.5H15.75C15.9489 1.5 16.1397 1.57902 16.2803 1.71967C16.421 1.86032 16.5 2.05109 16.5 2.25C16.5 2.44891 16.421 2.63968 16.2803 2.78033C16.1397 2.92098 15.9489 3 15.75 3H8.25C8.05109 3 7.86032 2.92098 7.71967 2.78033C7.57902 2.63968 7.5 2.44891 7.5 2.25Z" fill="#6B6B6B"/>
                     </svg>
@@ -316,7 +320,7 @@
                   <div class="preorder__stepper stepper">
                     <button class="stepper__btn btn-reset stepper__btn-down stepper__btn--disabled"><img loading="lazy" src="img/minus.svg" width="24" height="24" alt=""></button>
                     <div class="stepper__field">
-                      <input type="text" value="1" maxlength="2" class="stepper__input">
+                      <input type="text" name="item-3" value="1" maxlength="2" class="stepper__input">
                     </div>
                     <button class="stepper__btn btn-reset stepper__btn-up"><img loading="lazy" src="img/plus.svg" width="24" height="24" alt=""></button>
                   </div>
@@ -353,6 +357,14 @@
       </div>
     </footer>
     <div class="overlay"></div>
+
+    <div class="all_pages">
+      <div class="page_point">Pages</div>
+      <ul class="page_list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </div>
     <script src="js/main.js"></script>
 
   </div>
